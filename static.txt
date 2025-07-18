@@ -1,0 +1,19 @@
+Provides a REST API endpoint to convert Markdown to HTML.
+== Description ==
+
+Provides a REST API endpoint to convert Markdown to HTML.
+
+== Installation ==
+
+1. Upload the `markdown-html-api` folder to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. **POST** `domain.com/wp-json/md/v1/convert`
+
+
+== Frequently Asked Questions ==
+
+= How do I convert =
+Send a markdown json item via a post request to yourdomain.com/wp-json/md/v1/convert i.e
+{
+  "markdown": "# Hello World\n**This is bold**"
+}
