@@ -5,7 +5,7 @@
  * Tested up to:      6.8.2
  * Requires at least: 6.5
  * Requires PHP:      8.0
- * Version:           0.9.1
+ * Version:           0.9.2
  * Author:            Stingray82
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL2
@@ -66,7 +66,7 @@ function md_api_convert_markdown($request) {
 
 // Define our plugin version
 if ( ! defined( 'MARKDOWN_HTML_API_VERSION' ) ) {
-    define('MARKDOWN_HTML_API_VERSION', '0.9.1');
+    define('MARKDOWN_HTML_API_VERSION', '0.9.2');
 }
 
 // ──────────────────────────────────────────────────────────────────────────
