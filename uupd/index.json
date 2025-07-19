@@ -1,7 +1,7 @@
 {
     "slug": "markdown-html-api",
     "name": "Markdown to HTML API",
-    "version": "1.0",
+    "version": "1.0.1",
     "author": "Stingray82",
     "author_homepage": "https://reallyusefulplugins.com",
     "requires_php": "8.0",
@@ -11,9 +11,9 @@
         "description": "Provides a REST API endpoint to convert Markdown to HTML.",
         "installation": "1. Upload the `markdown-html-api` folder to the `/wp-content/plugins/` directory.<br />\r\n2. Activate the plugin through the 'Plugins' menu in WordPress.<br />\r\n3. **POST** `domain.com/wp-json/md/v1/convert`",
         "frequently_asked_questions": "= How do I convert =<br />\r\nSend a markdown json item via a post request to yourdomain.com/wp-json/md/v1/convert i.e<br />\r\n{<br />\r\n  \"markdown\": \"# Hello World\\n**This is bold**\"<br />\r\n}",
-        "changelog": "<h4>1.0 (18 July 2025)</h4><ul><li>New: Release</li></ul>"
+        "changelog": "<h4>1.0.1 (19 July 2025)</h4><ul><li>New: Brand Function Names</li><li>Update: Automatic Update Test</li></ul><h4>1.0 (18 July 2025)</h4><ul><li>New: Release</li></ul>"
     },
-    "last_updated": "2025-07-18 22:32:14",
+    "last_updated": "2025-07-19 12:47:38",
     "download_url": "https://github.com/stingray82/markdown-html-api/releases/latest/download/markdown-html-api.zip",
     "banners": {
         "low": "https://raw.githubusercontent.com/stingray82/markdown-html-api/main/uupd/banner-772x250.png",

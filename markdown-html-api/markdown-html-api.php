@@ -5,7 +5,7 @@
  * Tested up to:      6.8.2
  * Requires at least: 6.5
  * Requires PHP:      8.0
- * Version:           1.0
+ * Version:           1.0.1
  * Author:            Stingray82
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL2
@@ -17,7 +17,7 @@
 add_action('rest_api_init', function () {
     register_rest_route('md/v1', '/convert', [
         'methods'  => 'POST',
-        'callback' => 'md_api_convert_markdown',
+        'callback' => 'rup_md_api_convert_markdown',
         'args'     => [
             'markdown' => [
                 'required' => true,
@@ -28,7 +28,7 @@ add_action('rest_api_init', function () {
     ]);
 });
 
-function md_api_convert_markdown($request) {
+function rup_md_api_convert_markdown($request) {
     $markdown = trim($request->get_param('markdown'));
 
     if (!class_exists('ParsedownExtra')) {
@@ -66,7 +66,7 @@ function md_api_convert_markdown($request) {
 
 // Define our plugin version
 if ( ! defined( 'MARKDOWN_HTML_API_VERSION' ) ) {
-    define('MARKDOWN_HTML_API_VERSION', '1.0');
+    define('MARKDOWN_HTML_API_VERSION', '1.0.1');
 }
 
 // ──────────────────────────────────────────────────────────────────────────
